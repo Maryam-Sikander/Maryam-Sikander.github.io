@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="assets/css/main.css" />
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 </head>
+
 <body class="landing is-preload">
+
 
     <!-- Page Wrapper -->
     <div id="page-wrapper">
@@ -35,28 +37,50 @@
             </nav>
         </header>
 
-        <!-- Banner -->
-        <section id="banner">
-            <div class="inner">
-                <h2>Maryam Sikander</h2>
-                <p>Data Scientist</p>
-                
-                <!-- Social Media Links -->
-                <div class="social-icons">
-					<a href="https://github.com/Maryam-Sikander" target="_blank" class="icon">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/maryamsikander" target="_blank" class="icon">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="https://medium.com/@maryam-sikander" target="_blank" class="icon">
-                        <i class="fab fa-medium"></i>
-                    </a>
-                    
-                </div>
-            </div>
-            <a href="#who-am-i" class="more scrolly">Learn More</a>
-        </section>
+<!-- Banner -->
+<section id="banner">
+    <div class="inner">
+        <h2>Maryam Sikander</h2>
+        <p id="role"></p>
+        <script src="script.js"></script>
+
+        <!-- Social Media Links -->
+        <div class="social-icons">
+            <a class="socialicon github" href="https://github.com/Maryam-Sikander" target="_blank" rel="author">
+                <!-- SVG code for Github icon -->
+                <svg class="github-icon" width="45px" height="45px" viewBox="0 0 300 300" fill="#ffff">
+                    <!-- body -->
+                    <path id="body" d="M112.5,234.4v43.1c24.5,7.5,50.5,7.5,75,0V225c-0.4-11.1-4.9-21.6-12.7-29.6c30-3.4,59.5-23.5,59.5-64.1
+                        c0.9-13.9-3.3-27.7-11.8-38.7c4.1-11.6,3.7-24.4-1.3-35.7c0,0-11.2-3.7-37.5,13.8c-22.1-6.1-45.3-6.1-67.4,0
+                        C90.6,53.3,78.9,56.8,78.9,56.8c-5,11.3-5.4,24.1-1.3,35.7c-8.5,11.1-12.7,24.8-11.9,38.7c0.2,33.8,26.4,61.8,60.2,64.1
+                        c-5,4.7-8.1,11.1-8.6,18" />
+                    <!-- arm -->
+                    <path id="arm" d="M125.2,213.4c-13.9,7.8-31.5,2.8-39.3-11.2c-4.3-7.7-12-12.8-20.7-13.8c-11.2,0-4.6,6.4,0,9.4
+                        c6,5.1,10.8,11.5,13.8,18.8c2.9,7.4,7.7,24.1,41.5,17.8" />
+                </svg>
+            </a>
+            <a class="socialicon linkedin" href="https://www.linkedin.com/in/maryamsikander" target="_blank" rel="author">
+                <svg class="linkedin-icon" xmlns="http://www.w3.org/2000/svg" width="35" viewBox="0 0 24 24" fill="#0e76a8" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                    <rect x="2" y="9" width="4" height="12"></rect>
+                    <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+            </a>
+            <a class="socialicon medium" href="https://medium.com/@maryam-sikander" target="_blank" rel="author">
+                <svg class="medium-icon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50" fill="#ffff">
+                    <path d="M15 12A13 13 0 1015 38 13 13 0 1015 12zM35.5 13c-3.59 0-6.5 5.373-6.5 12 0 1.243.102 2.441.292 3.568.253 1.503.662 2.879 1.192 4.065.265.593.56 1.138.881 1.627.642.978 1.388 1.733 2.202 2.201C34.178 36.811 34.827 37 35.5 37s1.322-.189 1.933-.539c.814-.468 1.56-1.223 2.202-2.201.321-.489.616-1.034.881-1.627.53-1.185.939-2.562 1.192-4.065C41.898 27.441 42 26.243 42 25 42 18.373 39.09 13 35.5 13zM45.5 14c-.259 0-.509.173-.743.495-.157.214-.307.494-.448.833-.071.169-.14.353-.206.551-.133.395-.257.846-.37 1.343-.226.995-.409 2.181-.536 3.497-.063.658-.112 1.349-.146 2.065C43.017 23.499 43 24.241 43 25s.017 1.501.051 2.217c.033.716.082 1.407.146 2.065.127 1.316.31 2.501.536 3.497.113.498.237.948.37 1.343.066.198.135.382.206.551.142.339.292.619.448.833C44.991 35.827 45.241 36 45.5 36c1.381 0 2.5-4.925 2.5-11S46.881 14 45.5 14z"></path>
+                    </svg>
+            </a>
+            <a class="socialicon kaggle" href="https://www.kaggle.com/maryamsikander" target="_blank" rel="author">
+                <i class="fab fa-kaggle"></i>
+            </a>
+        </div>
+        
+    </div>
+    
+    <!-- "Learn More" button should be placed outside the inner div -->
+    <a href="#who-am-i" class="more scrolly">Learn More</a>
+</section>
 
         <!-- About Me -->
         <section id="who-am-i" class="wrapper style1 special">
@@ -87,53 +111,76 @@
                     <div class="heading-bar"></div>
                     <p>Exploring innovative solutions through diverse projects.</p>
                 </header>
-                <div class="projects-grid">
-                    <section class="spotlight">
-                        <div class="image"><img src="images/pic01.jpg" alt="ResuMate" /></div>
-                        <div class="content">
-                            <h2>ResuMate<br />Your AI Wingman for Job Hunting</h2>
-                            <a href="https://github.com/Maryam-Sikander/ResuMate" class="button" target="_blank">View Project</a>
+                <div class="projects-preview">
+                    <div class="project-card">
+                        <div class="project-image" style="background-image: url('images/noteflow.jpeg');"></div>
+                        <div class="project-title">  NoteFlow</div>
+                        <div class="project-content">
+                            <div class="project-description">
+                                Simplifies note-taking by generating notes from video lectures.
+                            </div>     
+                            <a href="https://github.com/Maryam-Sikander/noteflow" class="project-link">
+                                <i class="fab fa-github"></i> <!-- GitHub Icon -->
+                            </a>
                         </div>
-                    </section>
-                    <section class="spotlight">
-                        <div class="image"><img src="images/pic02.jpg" alt="Life Expectancy Prediction" /></div>
-                        <div class="content">
-                            <h2>Life Expectancy Prediction</h2>
-                            <p>Predicting life expectancy using diverse health and socioeconomic factors, achieving a 96% R² score.</p>
-							<a href="https://www.kaggle.com/code/maryamsikander/life-expectancy-prediction-96-r2score" class="button" target="_blank">View Project</a>
+                    </div>
+        
+                    <div class="projects-preview">
+                        <div class="project-card">
+                            <div class="project-image" style="background-image: url('images/WELLNEST.png');"></div>
+                            <div class="project-title">WELLNEST</div>
+                            <div class="project-content">
+                                <div class="project-description">
+                                    Empowering You to Lead a Balanced and Fulfilling Life
+                                </div>
+                                <a href="https://github.com/Maryam-Sikander/wellnest.ai" class="project-link">
+                                    <i class="fab fa-github"></i> <!-- GitHub Icon -->
+                                </a>
+                            </div>
                         </div>
-                    </section>
-                    <section class="spotlight">
-                        <div class="image"><img src="images/Zero Hunger.png" alt="Pale Blue Dot Visualization Challenge" /></div>
-                        <div class="content">
-                            <h2>Pale Blue Dot Visualization Challenge</h2>
-                            <p>Designed impactful visualizations with Tableau for NASA's challenge, focused on SDG-2 Zero Hunger.</p>
-							<a href="https://public.tableau.com/app/profile/datawhiz/viz/zerohunger/Dashboard2" class="button" target="_blank">View Dashboard</a>
+
+                <div class="projects-preview">
+                    <div class="project-card">
+                        <div class="project-image" style="background-image: url('images/pic01.jpg');"></div>
+                        <div class="project-title">ResuMate</div>
+                        <div class="project-content">
+                            <div class="project-description">
+                                ResuMate:
+                                Your AI Wingman for Job Hunting
+                            </div>
+                            <a href="https://github.com/Maryam-Sikander/ResuMate" class="project-link">
+                                <i class="fab fa-github"></i> <!-- GitHub Icon -->
+                            </a>
                         </div>
+                    </div>
                     </section>
                 </div>
             </div>
         </section>
 
-        <!-- Experience -->
-        <section id="experience" class="wrapper style1 special">
-            <div class="inner">
-                <header class="major">
-                    <h1>Experience</h1>
-                    <div class="heading-bar"></div>
-                </header>
-                <ul class="features">
-                    <li class="icon fa-heart">
-                        <h3>Open-Source Contributor</h3>
-                        <p>Contributed to open-source projects at the GirlScript Summer of Code.</p>
-                    </li>
-                    <li class="icon solid fa-code">
-                        <h3>SWE Fellow at Headstarter</h3>
-                        <p>Developed 5+ AI apps using Next.js, OpenAI, Pinecone, and Stripe API. Aiming for 1,000 waitlist sign-ups, 1,000 account creations, or $1,000 in revenue.</p>
-                    </li>
-                </ul>
-            </div>
-        </section>
+  <!-- Experience -->
+  <section id="experience" class="wrapper style1 special">
+    <div class="inner">
+        <header class="major">
+            <h1>Experience</h1>
+            <div class="heading-bar"></div>
+        </header>
+        <ul class="features">
+            <li class="icon fa-heart">
+                <h3>Open-Source Contributor</h3>
+                <span class="experience-date">May 2024 - August 2024</span> <!-- Add the date here -->
+                <p>Contributed to open-source projects at the GirlScript Summer of Code.</p>
+            </li>
+            
+            <li class="icon solid fa-code">
+                <h3>SWE Fellow at Headstarter</h3>
+                <span class="experience-date">July 2024 - September 2024</span> 
+
+                <p>Developed 5+ AI apps using Next.js, OpenAI, Pinecone, and Stripe API. Aiming for 1,000 waitlist sign-ups, 1,000 account creations, or $1,000 in revenue.</p>
+            </li>
+        </ul>
+    </div>
+</section>
 
         <!-- Activities -->
         <section id="activities" class="wrapper style1 special">
@@ -162,28 +209,107 @@
                 </ul>
             </div>
         </section>
-		 <!-- Medium Profile -->
-		 <section id="medium" class="wrapper style1 special">
-                <header class="major">
-                    <h1>Articles</h1>
-                    <div class="heading-bar"></div>
-                </header>
-                <div class="content">
-                    <p>Check out my Medium profile for insightful articles on AI and Data Science</p>
-                    <a href="https://medium.com/@maryam-sikander" class="button" target="_blank">Visit Medium Profile</a>
-                </div>
-            
-        </section>
+		<!-- Medium Profile -->
+<section id="medium" class="wrapper style1 special">
+    <header class="major fade-in-up">
+        <h1>Articles</h1>
+        <div class="heading-bar"></div>
+    </header>
+    <div class="content fade-in-up">
+        <p>Check out my Medium profile for insightful articles on AI and Data Science</p>
+        <a href="https://medium.com/@maryam-sikander" class="button" target="_blank">Visit Medium Profile</a>
+    </div>
+    <div class="articles-preview">
+        <!-- Article previews will be dynamically inserted here -->
+    </div>
+</section>
 
+<script>
+    // Simulated article data (replace with actual data from Medium API if possible)
+    const articles = [
+        {
+            title: "A Comprehensive Guide to Convolutional Neural Networks",
+            excerpt: "    ",
+            image: "https://picsum.photos/300/150",
+            url: "https://maryam-sikander.medium.com/a-comprehensive-guide-to-convolutional-neural-networks-ad850c578d45"
+        },
+        {
+            title: "Scaling up Machine Learning: A Deep Dive into Feature Scaling",
+            excerpt: "     ",
+            image: "https://picsum.photos/seed/picsum/200/300",
+            url: "https://maryam-sikander.medium.com/scaling-up-machine-learning-a-deep-dive-into-feature-scaling-65e055412278"
+        },
+        {
+            title: "Essential Python Libraries You Need to Explore Today",
+            excerpt: "     ",
+            image: "https://picsum.photos/300/150?",
+            url: "https://medium.com/codex/essential-libraries-you-need-to-explore-today-174ef9c00f18"
+        }
+    ];
+
+    function createArticleCard(article) {
+        return `
+            <a href="${article.url}" class="article-card fade-in-up" target="_blank">
+                <div class="article-image" style="background-image: url('${article.image}')"></div>
+                <div class="article-content">
+                    <h3 class="article-title">${article.title}</h3>
+                    <p class="article-excerpt">${article.excerpt}</p>
+                </div>
+            </a>
+        `;
+    }
+
+    function loadArticlePreviews() {
+        const previewContainer = document.querySelector('.articles-preview');
+        articles.forEach((article, index) => {
+            setTimeout(() => {
+                const articleCard = createArticleCard(article);
+                previewContainer.innerHTML += articleCard;
+            }, index * 200); // Staggered animation
+        });
+    }
+
+    // Load article previews when the page is ready
+    document.addEventListener('DOMContentLoaded', loadArticlePreviews);
+</script>
         <!-- Footer -->
         <footer id="footer">
-            <ul class="icons">
-                <li><a href="https://github.com/Maryam-Sikander" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-                <li><a href="https://www.linkedin.com/in/maryamsikander/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-                <li><a href="mailto:maryamsikander66@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-            </ul>
+            <div class="social-icons">
+                <a class="socialicon email" href="mailto:maryamsikander66@gmail.com" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="35" height="35" fill="#ffffff">
+                        <path d="M12 13.5l-8-5V18h16V8.5l-8 5z"></path>
+                        <path d="M20 6H4l8 5 8-5z"></path>
+                    </svg>
+                </a>
+                <a class="socialicon github" href="https://github.com/Maryam-Sikander" target="_blank" rel="author">
+                    <!-- SVG code for Github icon -->
+                    <svg class="github-icon" width="45px" height="45px" viewBox="0 0 300 300" fill="#ffff">
+                        <!-- body -->
+                        <path id="body" d="M112.5,234.4v43.1c24.5,7.5,50.5,7.5,75,0V225c-0.4-11.1-4.9-21.6-12.7-29.6c30-3.4,59.5-23.5,59.5-64.1
+                                                    c0.9-13.9-3.3-27.7-11.8-38.7c4.1-11.6,3.7-24.4-1.3-35.7c0,0-11.2-3.7-37.5,13.8c-22.1-6.1-45.3-6.1-67.4,0
+                                                    C90.6,53.3,78.9,56.8,78.9,56.8c-5,11.3-5.4,24.1-1.3,35.7c-8.5,11.1-12.7,24.8-11.9,38.7c0.2,33.8,26.4,61.8,60.2,64.1
+                                                    c-5,4.7-8.1,11.1-8.6,18" />
+                        <!-- arm                             -->
+                        <path id="arm" d="M125.2,213.4c-13.9,7.8-31.5,2.8-39.3-11.2c-4.3-7.7-12-12.8-20.7-13.8c-11.2,0-4.6,6.4,0,9.4
+                                                    c6,5.1,10.8,11.5,13.8,18.8c2.9,7.4,7.7,24.1,41.5,17.8" />
+                    </svg>
+                </a>
+                <a class="socialicon linkedin" href="https://www.linkedin.com/in/maryamsikander" target="_blank" rel="author">
+                    <svg class="linkedin-icon" xmlns="http://www.w3.org/2000/svg" width="35" viewBox="0 0 24 24" fill="#0e76a8" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                        <rect x="2" y="9" width="4" height="12"></rect>
+                        <circle cx="4" cy="4" r="2"></circle>
+                    </svg>
+                </a>
+                <a class="socialicon medium" href="https://medium.com/@maryam-sikander" target="_blank" rel="author">
+                    <svg class="medium-icon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50" fill="#ffff">
+                        <path d="M15 12A13 13 0 1015 38 13 13 0 1015 12zM35.5 13c-3.59 0-6.5 5.373-6.5 12 0 1.243.102 2.441.292 3.568.253 1.503.662 2.879 1.192 4.065.265.593.56 1.138.881 1.627.642.978 1.388 1.733 2.202 2.201C34.178 36.811 34.827 37 35.5 37s1.322-.189 1.933-.539c.814-.468 1.56-1.223 2.202-2.201.321-.489.616-1.034.881-1.627.53-1.185.939-2.562 1.192-4.065C41.898 27.441 42 26.243 42 25 42 18.373 39.09 13 35.5 13zM45.5 14c-.259 0-.509.173-.743.495-.157.214-.307.494-.448.833-.071.169-.14.353-.206.551-.133.395-.257.846-.37 1.343-.226.995-.409 2.181-.536 3.497-.063.658-.112 1.349-.146 2.065C43.017 23.499 43 24.241 43 25s.017 1.501.051 2.217c.033.716.082 1.407.146 2.065.127 1.316.31 2.501.536 3.497.113.498.237.948.37 1.343.066.198.135.382.206.551.142.339.292.619.448.833C44.991 35.827 45.241 36 45.5 36c1.381 0 2.5-4.925 2.5-11S46.881 14 45.5 14z"></path>
+                        </svg>
+                </a>
+            </div>
+            
             <ul class="copyright">
-                <li>&copy; Maryam Sikander</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                <li>&copy; 2024 Maryam Sikander</li><li></li>
             </ul>
         </footer>
 
